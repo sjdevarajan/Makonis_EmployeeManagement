@@ -1,0 +1,9 @@
+<h1>Hello, Good Day!</h1>
+<p>Welcome to Makonis Employee Data Application</p>
+<form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+  First Name: <input type="text" ngModel name="FirstName" /> <br />
+  Last Name: <input type="text" ngModel name="LastName" /> <br /><br />
+  <button type="submit" class="button">Save Employee!</button> 
+  <button type="button" class="button" (click)="NextEmployee(userPost)">Next Employee!</button> <br /><br />
+  {{clickMessage}}
+</form>
